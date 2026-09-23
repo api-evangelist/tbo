@@ -1,0 +1,16 @@
+generated: '2026-09-23'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: tbo.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Nov  3 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 2592000
+domains:
+- domain: tbo.com
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: false

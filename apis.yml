@@ -1,23 +1,57 @@
 aid: tbo
+
 name: TBO.com
-description: 'TBO.com is a company surfaced via the API Evangelist harvest backlog (source: travel) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.tbo.com/img/oglogo.png
+
+description: 'TBO.com is a leading global travel distribution platform that simplifies travel business operations for agents, enterprises, and travel providers. Offering a comprehensive suite of products including hotels, packages, transfers, rail, cargo, marine, and more, TBO.com provides robust APIs that enable partners to integrate travel services, manage bookings, and expand their offerings worldwide.'
+
 url: https://raw.githubusercontent.com/api-evangelist/tbo/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:travel
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-23'
+
 modified: '2026-09-23'
+
 tags:
-- Company
-apis: []
+- Travel
+- Distribution
+- API
+- B2B
+- Platform
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/tbo-hosts.yml
+- type: Newsroom
+  url: https://www.tbo.com/engagement/media/
+- type: DomainSecurity
+  url: security/tbo-domain-security.yml
 - type: Website
   url: https://tbo.com/
+- type: PrivacyPolicy
+  url: https://www.tbo.com/privacy-policy
+- type: TermsOfService
+  url: https://www.tbo.com/terms-and-conditions
+
+apis: []
+x-enrichment:
+  date: '2026-09-23'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
